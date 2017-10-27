@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="panel panel-default" style="margin-top: 150px;height: 400px;">
+			<div class="panel-body">
+				<div class="panel panel-default container" style="width: 500px;height: 350px;">
+					<form role="form" style="width: 400px;" class="container">
+						<div align="center">
+							<h2>Welcome Login</h2>
+						</div>
+						<hr />
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-user" style="color: grey;" data-toggle="tooltip" data-placement="left" title="Your domain UserID"></span>
+							</span>
+							<input type="text" class="form-control" placeholder="UserID" />
+						</div>
+						<br />
+						<div class="input-group input-group-lg">
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-lock" style="color: grey;" data-toggle="tooltip" data-placement="left" title="Your domain Password"></span>
+							</span>
+							<input type="password" class="form-control" placeholder="Password" />
+						</div>
+						<div>
+							<span class="checkbox" style="margin-left: 20px;">
+								<input type="checkbox" />Remember me
+							</span>
+						</div>
+						<div>
+							<input type="button" class="btn btn-info btn-lg" value="SIGN IN" onclick="window.location.href='main.html';" />
+							<!--<input type="button" class="btn btn-info btn-lg" value="REGISTER" />-->
+						</div>
+						<br />
+						<div>
+							<a href="#">Need help signing in?</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {$("[data-toggle='tooltip']").tooltip();});
+		</script>
+	</body>
+</html>

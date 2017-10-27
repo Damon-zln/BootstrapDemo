@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<button class="btn btn-info" data-toggle="modal" data-target="#cre-group">CREATE GROUP</button>
+				<form class="navbar-form navbar-right" style="margin-top: 1px;">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search" />
+					</div>
+					<button type="button" class="btn btn-info">search</button>
+				</form>
+			</div>
+			<div class="panel-body">
+				<div>
+					<table class="table table-striped table-hover" style="margin: 0 auto;border-top: 1px solid black;border-bottom: 1px solid black;">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Group Name</th>
+								<th>Description</th>
+								<th>Create Time</th>
+								<th>Last Run Time</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>attorneys_Group_Auto</td>
+								<td>group</td>
+								<td>2017-08-16 01:49:26</td>
+								<td>2017-08-16 01:54:16</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#" data-toggle="modal" data-target="#edt-group">Edit</a>&nbsp;
+									<a href="#" data-toggle="modal" data-target="#del-group">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>blacklists_Group_Auto</td>
+								<td>group</td>
+								<td>2017-09-14 09:44:31</td>
+								<td>2017-09-14 09:49:59</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>dentists_Group_Auto</td>
+								<td>group</td>
+								<td>2017-01-09 14:48:59</td>
+								<td>2017-01-09 14:48:59</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>nurses_Group_Auto</td>
+								<td>nurses_Group_Auto</td>
+								<td>2017-01-20 11:02:59</td>
+								<td>2017-01-20 11:02:59</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>pharmacists_Group_Auto</td>
+								<td>group</td>
+								<td>2017-03-08 13:20:02</td>
+								<td>2017-03-08 13:20:02</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>physicians_Group_Auto</td>
+								<td>group</td>
+								<td>2017-04-05 04:42:32</td>
+								<td>2017-04-05 04:43:16</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>prolics_Group_Auto</td>
+								<td>group</td>
+								<td>2016-09-16 09:07:29</td>
+								<td>2016-09-16 09:07:29</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>insurance_Auto_group</td>
+								<td>insurance_Auto_group</td>
+								<td>2016-11-22 16:21:00</td>
+								<td>2016-11-22 16:21:00</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>architects_Group_Auto</td>
+								<td></td>
+								<td>2017-04-09 14:00:29</td>
+								<td>2017-04-09 14:01:19</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>realestates_Gruop_Auto</td>
+								<td>realestates group</td>
+								<td>2016-11-10 15:39:00</td>
+								<td>2016-11-10 15:39:00</td>
+								<td>
+									<a href="#">Run</a>&nbsp;
+									<a href="#">Edit</a>&nbsp;
+									<a href="#">Delete</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					<span style="margin: 20px 0px 0px 0px;">Showing 1 to 10 of 38 entries</span>
+					<ul class="pagination" style="margin: 5px 0px 0px 0px; float: right;">
+						<li class="disabled"><a href="#">&laquo;Previous</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">Next&raquo;</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--创建-模态框-->
+		<div class="modal fade" id="cre-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="overflow: hidden;">
+			<div class="modal-dialog" style="width: 900px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel"><b>Create new Group</b></h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" role="form">
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="groupName" class="col-sm-3 control-label" >Group Name</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="groupName" />
+								</div>
+							</div>
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="cronExpression" class="col-sm-3 control-label">Cron Expression</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="cronExpression" />
+								</div>
+							</div>
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="Description" class="col-sm-3 control-label">Description</label>
+								<div class="col-sm-6">
+									<textarea class="form-control" rows="2"></textarea>
+								</div>
+							</div>
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="emailAddress(es)" class="col-sm-3 control-label">Email Address(es)</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="emailAddress(es)" />
+								</div>
+							</div>
+							<div class="form-group" style="margin: 15px 0px 0px 0px;">
+								<div class="col-sm-3" style="margin-left: 150px;">
+									<input type="text" class="form-control" placeholder="search..." />
+									<select multiple="multiple" class="form-control" size="7">
+										<option value="">MOAttorneys</option>
+										<option value="">NCAttorneys</option>
+										<option value="">NMAttorneys</option>
+										<option value="">OHAttorneys</option>
+										<option value="">OKAttorneys</option>
+										<option value="">RIAttorneys</option>
+										<option value="">UTAttorneys</option>
+										<option value="">VAAttorneys</option>
+										<option value="">WYAttorneys</option>
+									</select>
+								</div>
+								<div class="col-sm-1" style="padding-left: 0px;">
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-forward"></span>
+									</button>
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</button>
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</button>
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-backward"></span>
+									</button>
+								</div>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" placeholder="search..." />
+									<select multiple="multiple" class="form-control" size="7"></select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+						<button type="button" class="btn btn-primary">SAVE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--修改-模态框-->
+		<div class="modal fade" id="edt-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" style="overflow: hidden;">
+			<div class="modal-dialog" style="width: 900px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel"><b>Edit Group</b></h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" role="form">
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="groupName" class="col-sm-3 control-label" >Group Name</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="groupName" value="attorneys_Group_Auto" disabled="disabled"/>
+								</div>
+							</div>
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="cronExpression" class="col-sm-3 control-label">Cron Expression</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="cronExpression" value="0 15 10 * * ? 2018"/>
+								</div>
+							</div>
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="Description" class="col-sm-3 control-label">Description</label>
+								<div class="col-sm-6">
+									<textarea class="form-control" rows="2">group</textarea>
+								</div>
+							</div>
+							<div class="form-group" style="margin: 1px auto;">
+								<label for="emailAddress(es)" class="col-sm-3 control-label">Email Address(es)</label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="emailAddress(es)" value="annzan@acxiom.com"/>
+								</div>
+							</div>
+							<div class="form-group" style="margin: 15px 0px 0px 0px;">
+								<div class="col-sm-3" style="margin-left: 150px;">
+									<input type="text" class="form-control" placeholder="search..." />
+									<select multiple="multiple" class="form-control" size="7">
+										<option value="">MOAttorneys</option>
+										<option value="">NCAttorneys</option>
+										<option value="">NMAttorneys</option>
+										<option value="">OHAttorneys</option>
+										<option value="">OKAttorneys</option>
+										<option value="">RIAttorneys</option>
+										<option value="">UTAttorneys</option>
+										<option value="">VAAttorneys</option>
+										<option value="">WYAttorneys</option>
+									</select>
+								</div>
+								<div class="col-sm-1" style="padding-left: 0px;">
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-forward"></span>
+									</button>
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</button>
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</button>
+									<button type="button" class="btn btn-block btn-sm" style="width: 70px;">
+										<span class="glyphicon glyphicon-backward"></span>
+									</button>
+								</div>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" placeholder="search..." />
+									<select multiple="multiple" class="form-control" size="7">
+										<option value="">MAAttorneys_ag</option>
+										<option value="">MAAttorneys_hn</option>
+										<option value="">MAAttorneys_ot</option>
+										<option value="">MAAttorneys_uz</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">CLOSE</button>
+						<button type="button" class="btn btn-primary">SAVE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--删除-提示框-->
+		<div class=" modal fade" id="del-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog" style="width: 300px;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="myModalLabel"><b>Delete Group</b></h5>
+					</div>
+					<div class="modal-body">
+						You are trying to delete the group?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">YES</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

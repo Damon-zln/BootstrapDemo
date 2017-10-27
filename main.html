@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title></title>
+		<script>
+			function setIframeHeight(iframe) {
+				if(iframe) {
+					var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+					if(iframeWin.document.body) {
+						iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+					}
+				}
+			}
+			
+			function change(name){
+				if(name=="script"){
+					id_frame.src="script-index.html";
+				}
+				if(name=="group"){
+					id_frame.src="group-index.html";
+				}
+				if(name=="job"){
+					id_frame.src="job-index.html";
+				}
+				if(name=="node"){
+					id_frame.src="node-index.html";
+				}
+				if(name=="ftp"){
+					id_frame.src="ftp-index.html";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="panel panel-default">
+				<ul class="nav nav-tabs">
+					<li>
+						<label style="font-size: 24px;margin-top: 3px; margin-left: 10px;">Web Data Platform</label>
+						<sup style="font-size: 12px;">v1.1.0</sup>
+					</li>
+					<li style="margin-left: 50px;" class="active">
+						<a href="#" data-toggle="tab" target="frame" onclick="change('script')">SCRIPT</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tab" target="frame" onclick="change('group')">GROUP</a>
+					</li>
+					<li>
+						<a href="#" data-toggle="tab" target="frame" onclick="change('job')">JOB</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle">SYSTEM<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#" data-toggle="tab" target="frame" onclick="change('node')">Node Management</a></li>
+							<li class="divider"></li>
+							<li><a href="#" data-toggle="tab" target="frame" onclick="change('ftp')">Ftp Server Management</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="panel-body tab-content">
+					<div class="tab-pane fade in active">
+						<iframe id="id_frame" src="script-index.html" name="frame" frameborder="0" scrolling="no" width="100%" onload="setIframeHeight(this)"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
